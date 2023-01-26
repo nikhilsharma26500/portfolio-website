@@ -30,21 +30,7 @@ This is a personal portfolio website built using HTML, SCSS, React.js, and sever
 
 - `swiper` - This library provides a customizable and feature-rich slider for React
 
-## Installation
-- Clone the repository using git: git clone https://github.com/<username>/personal-portfolio-website.git
-- Install the required dependencies by running npm install
-- Start the development server by running npm start
-- Open http://localhost:3000 in your browser to view the website
-
-## Deployment
-This website can be deployed to any web server or hosting platform that supports React.
-
-## Author
+## Author and Owner
 Nikhil Sharma
-
-## Acknowledgements
-React.js
-Bootstrap
-
 
 
