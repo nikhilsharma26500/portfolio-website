@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+.portfoliow {
+    display: block;
+  width: 80%;
+  padding: auto;
+
+  .col {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+  }
+
+  .card {
+    background-color: rgba($color: #a5a2a2, $alpha: 0);
+    border: 3px solid #ffd700;
+    color: white;
+    height: fit-content;
+    width: 25rem;
+    padding: 15px;
+    border-radius: 10px;
+
+
+
+    h5 {
+      font-family: Coolvetica;
+      font-size: 1.6rem;
+    }
+
+    &:hover {
+      transition: 50ms;
+      background-color: rgba($color: #a5a2a2, $alpha: 0.3);
+    }
+
+    .card-subtext {
+      font-family: Space Mono;
+    }
+
+    .btn {
+      font-size: 1.3rem;
+      z-index: 3;
+      background-color: transparent;
+      color: #ffd700;
+      border: 1px solid #ffd700;
+      margin: 2px;
+
+      &:hover {
+        color: black;
+        background-color: #ffd700;
+        transition: 30ms;
+      }
+    }
+  }
+  .card1 {
+    img {
+      border: 1px solid #a5a2a2;
+      margin: 5px 0;
+      width: 20rem;
+
+      @media screen and (max-width: 425px) {
+        width: 15rem;
+      }
+    }
+  }
+}
