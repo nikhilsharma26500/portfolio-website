@@ -2,7 +2,7 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import Typewriter from "../AnimatedLetters/index";
 
-const typeWriter = ["web-developer", "programmer", "astrophile"];
+const typeWriter = ["web-developer", "student", "programmer"];
 const Home = () => {
   return (
     <>
