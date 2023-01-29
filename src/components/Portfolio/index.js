@@ -25,14 +25,11 @@ const Portfolio = () => {
                 <p className="card-subtext">Python, Pygame</p>
                 <br />
                 <a
-                  href="https://github.com/nikhilsharma26500/CSHub-Local-Hack-Day-Website"
+                  href="https://github.com/nikhilsharma26500/Sorting-visualizer"
                   class="btn btn1 btn-primary"
                 >
                   {" "}
                   <FontAwesomeIcon icon={faGithub} /> Github
-                </a>
-                <a href="https://cshublhd.tech/" class="btn btn2 btn-primary">
-                  <FontAwesomeIcon icon={faGlobe} /> Website
                 </a>
               </div>
             </div>
@@ -48,14 +45,11 @@ const Portfolio = () => {
                 </p>
                 <p className="card-subtext">Python</p>
                 <a
-                  href="https://github.com/nikhilsharma26500/CSHub-Local-Hack-Day-Website"
+                  href="https://github.com/nikhilsharma26500/yuHacks-discord-bot-workshop-"
                   class="btn btn1 btn-primary"
                 >
                   {" "}
                   <FontAwesomeIcon icon={faGithub} /> Github
-                </a>
-                <a href="https://cshublhd.tech/" class="btn btn2 btn-primary">
-                  <FontAwesomeIcon icon={faGlobe} /> Website
                 </a>
               </div>
             </div>
@@ -69,16 +63,13 @@ const Portfolio = () => {
                 <p className="card-text">
                   Created CSHub Local Hacks Day 2023 website
                 </p>
-                <p className="card-subtext">HTML, CSS, JavaScript, React.js</p>
+                <p className="card-subtext">Python</p>
                 <a
-                  href="https://github.com/nikhilsharma26500/CSHub-Local-Hack-Day-Website"
+                  href="https://github.com/nikhilsharma26500/hangman_game"
                   class="btn btn1 btn-primary"
                 >
                   {" "}
                   <FontAwesomeIcon icon={faGithub} /> Github
-                </a>
-                <a href="https://cshublhd.tech/" class="btn btn2 btn-primary">
-                  <FontAwesomeIcon icon={faGlobe} /> Website
                 </a>
               </div>
             </div>
@@ -96,13 +87,13 @@ const Portfolio = () => {
                 </p>
                 <p className="card-subtext">HTML, CSS, JavaScript, React.js</p>
                 <a
-                  href="https://github.com/nikhilsharma26500/CSHub-Local-Hack-Day-Website"
+                  href="https://github.com/nikhilsharma26500/portfolio-website"
                   class="btn btn1 btn-primary"
                 >
                   {" "}
                   <FontAwesomeIcon icon={faGithub} /> Github
                 </a>
-                <a href="https://cshublhd.tech/" class="btn btn2 btn-primary">
+                <a href="https://nikhilsharma.online/" class="btn btn2 btn-primary">
                   <FontAwesomeIcon icon={faGlobe} /> Website
                 </a>
               </div>
