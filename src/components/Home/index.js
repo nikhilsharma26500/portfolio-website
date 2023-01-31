@@ -2,7 +2,7 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import Typewriter from "../AnimatedLetters/index";
 
-const typeWriter = ["web-developer", "programmer", "astrophile"];
+const typeWriter = ["web-developer", "student", "programmer"];
 const Home = () => {
   return (
     <>
@@ -26,7 +26,7 @@ const Home = () => {
           <p>Currently enrolled in B.Sc. Computer Science at Lassonde School of Engineering, York University. Learning technologies and tools such as <span className="coding">Python, Java, JavaScript, HTML </span>and <span className="coding">CSS</span>. Aspiring to delve deeper into Full Stack technologies and the world of Data Science.</p>
           </h1>
           <a
-            href="https://1drv.ms/b/s!AlaMY3YFkkIqh32HvrQnyZR9_HWH?e=uebCHK"
+            href="https://1drv.ms/b/s!AlaMY3YFkkIqiB7XgZXfv_JIg-t1?e=MaKc7Y"
             target="_blank"
           >
             <button className="flat-button">RESUME</button>
