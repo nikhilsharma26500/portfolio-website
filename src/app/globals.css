@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
 .dotted-background {
-  background-image: radial-gradient(#fff 1%, transparent 10%);
+  background-image: radial-gradient(#ffffff 1%, transparent 10%);
   background-size: 30px 30px;
+}
+
+.cursive-font{
+  font-family: 'Cedarville Cursive', cursive;
 }
