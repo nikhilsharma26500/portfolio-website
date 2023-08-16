@@ -2,17 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 .dotted-background {
   background-image: radial-gradient(#ffffff 1%, transparent 10%);
   background-size: 30px 30px;
 }
 
-.cursive-font{
-  font-family: 'Cedarville Cursive', cursive;
+.gradient-background {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #e5e5f7 20%,
+      #e5e5f7 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #e5e5f7 20%,
+        #e5e5f7 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px,
+    linear-gradient(#444cf7 2px, transparent 2px) 0 -1px,
+    linear-gradient(90deg, #444cf7 2px, #e5e5f7 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
-.roboto{
-  font-family: 'Roboto Mono', monospace;
+.cursive-font {
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.roboto {
+  font-family: "Roboto Mono", monospace;
 }
