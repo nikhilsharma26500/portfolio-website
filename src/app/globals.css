@@ -10,7 +10,7 @@
 }
 
 .gradient-background {
-  background-color: #e5e5f7;
+  background-color: #ffffff;
   opacity: 0.8;
   background: radial-gradient(
       circle,
@@ -42,6 +42,7 @@
 
 .block-background{
   background-image: url("../../public/grid_pattern4.png");
+  background-repeat: no-repeat;
 }
 
 .cursive-font {
