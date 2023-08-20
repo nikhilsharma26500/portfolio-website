@@ -4,20 +4,13 @@ import Image from "next/image"
 import React from "react"
 import YouTube from "react-youtube"
 import { IBM_Plex_Mono, Montserrat } from "next/font/google"
-// import "../../../public/logos/logo.ts"
+import {finalList} from "@/../public/logos/logo";
 
 const monst = Montserrat({ subsets: ['latin'], weight: ["400", "500", "700"] })
 const ibm_mono = IBM_Plex_Mono({ subsets: ['latin'], weight: ["400", "500", "700"] })
 
 interface Logos {
-  "nextJS": string,
-  "openai": string,
-  "python": string,
-  "typescript": string,
-  "fastapi": string,
-  "mysql": string,
-  "sqlalchemy": string,
-  "meta": string,
+  [key: string]: string;
 }
 
 const logos: Logos = {
@@ -72,62 +65,66 @@ const devProjects = () => {
 
   return (
     <>
-      {/* <div className={`${ibm_mono.className} container mx-auto p-4 h-full bg-[url("../../public/testing.jpg")]`}> */}
-      <div className={`${ibm_mono.className} container mx-auto mt-2 p-4 h-full`}>
+      <div className="mx-auto rounded-[30px] backdrop-blur-xl bg-[#3f3f3f]/75 h-[80%] w-[80%] shadow-xl shadow-black overflow-auto block-background">
+        <div className="container h-full  rounded-[10px] p-4 mx-auto">
+          {/* <div className={`${ibm_mono.className} container mx-auto p-4 h-full bg-[url("../../public/testing.jpg")]`}> */}
+          <div className={`${ibm_mono.className} container mx-auto mt-2 p-4 h-full`}>
 
-        {/* main box */}
-        <div className="mx-14 my-5  text-white h-[100%]">
+            {/* main box */}
+            <div className="mx-14 my-5  text-white h-[100%]">
 
-          {/* Box 1 */}
-          <div className="w-full mx-auto flex justify-between items-center">
-            <div className={`${ibm_mono.className}`}>
-              <h1 className="lg:text-5xl text-3xl">
-                TheGuides
-              </h1>
-              <p className="text-[0.9em] font-light">Learning powered by AI</p>
+              {/* Box 1 */}
+              <div className="w-full mx-auto flex justify-between items-center">
+                <div className={`${ibm_mono.className}`}>
+                  <h1 className="lg:text-5xl text-3xl">
+                    TheGuides
+                  </h1>
+                  <p className="text-[0.9em] font-light">Learning powered by AI</p>
 
-              {/* Logos */}
-              <div className="container flex gap-2 items-center">
-                Technologies:
-                <div title="TypeScript" dangerouslySetInnerHTML={{ __html: logos.typescript }} />
-                <div title="Python" dangerouslySetInnerHTML={{ __html: logos.python }} />
-                <div title="NextJS" className="bg-white rounded-full" dangerouslySetInnerHTML={{ __html: logos.nextJS }} />
-                <div title="OpenAI" dangerouslySetInnerHTML={{ __html: logos.openai }} />
-                <div title="FastAPI" className="bg-white rounded-full cursor-text" dangerouslySetInnerHTML={{ __html: logos.fastapi }} />
-                <div title="MySQL" dangerouslySetInnerHTML={{ __html: logos.mysql }} />
-                <div title="SQLAlchemy" className="bg-white rounded-md" dangerouslySetInnerHTML={{ __html: logos.sqlalchemy }} />
-                <div title="FAISS (Meta)" dangerouslySetInnerHTML={{ __html: logos.meta }} />
+                  {/* Logos */}
+                  <div className="container flex gap-2 items-center">
+                    Technologies:
+                    <div title="TypeScript" dangerouslySetInnerHTML={{ __html: logos.typescript }} />
+                    <div title="Python" dangerouslySetInnerHTML={{ __html: logos.python }} />
+                    <div title="NextJS" className="bg-white rounded-full" dangerouslySetInnerHTML={{ __html: logos.nextJS }} />
+                    <div title="OpenAI" dangerouslySetInnerHTML={{ __html: logos.openai }} />
+                    <div title="FastAPI" className="bg-white rounded-full cursor-text" dangerouslySetInnerHTML={{ __html: logos.fastapi }} />
+                    <div title="MySQL" dangerouslySetInnerHTML={{ __html: logos.mysql }} />
+                    <div title="SQLAlchemy" className="bg-white rounded-md" dangerouslySetInnerHTML={{ __html: logos.sqlalchemy }} />
+                    <div title="FAISS (Meta)" dangerouslySetInnerHTML={{ __html: logos.meta }} />
+                  </div>
+                  {/* Buttons */}
+                  <div className="flex pt-2 gap-4">
+                    Links:
+                    <a href="https://devpost.com/software/theguides-ai" target="_blank" className="relative inline-flex items-center justify-start px-3 py-1 overflow-hidden transition-all bg-[#5ECDE6] rounded hover:bg-white group">
+                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#143E55] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                      <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Devpost</span>
+                    </a>
+                    <a href="https://theguidesai.vercel.app/" target="_blank" className="relative inline-flex items-center justify-start px-3 py-1 overflow-hidden transition-all bg-[#ffffff]  hover:border rounded hover:bg-white group">
+                      <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#000000] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                      <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Website</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="shadow-xl border border-red-800 shadow-black" style={{ borderRadius: "10px", overflow: "hidden" }}>
+                  <YouTube opts={opts} videoId={videoID.theGuides} />
+                </div>
               </div>
-              {/* Buttons */}
-              <div className="flex pt-2 gap-4">
-                Links:
-              <a href="https://devpost.com/software/theguides-ai" target="_blank" className="relative inline-flex items-center justify-start px-3 py-1 overflow-hidden transition-all bg-[#5ECDE6] rounded hover:bg-white group">
-                <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#143E55] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Devpost</span>
-              </a>
-              <a href="https://theguidesai.vercel.app/" target="_blank" className="relative inline-flex items-center justify-start px-3 py-1 overflow-hidden transition-all bg-[#ffffff]  hover:border rounded hover:bg-white group">
-                <span className="w-48 h-48 rounded rotate-[-40deg] bg-[#000000] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-                <span className="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Website</span>
-              </a>
-            </div>
-            </div>
-
-            <div className="shadow-xl border border-red-800 shadow-black" style={{ borderRadius: "10px", overflow: "hidden" }}>
-              <YouTube opts={opts} videoId={videoID.theGuides} />
-            </div>
-          </div>
 
 
-          {/* Box 2 */}
-          <div className={`container mt-12 ${monst.className}`}>
-            <h2 className="text-[500] underline">
-              Description:
-            </h2>
-            <ul>
-              {projectaDescription.TheGuides.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+              {/* Box 2 */}
+              <div className={`container mt-12 ${monst.className}`}>
+                <h2 className="text-[500] underline">
+                  Description:
+                </h2>
+                <ul>
+                  {projectaDescription.TheGuides.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
